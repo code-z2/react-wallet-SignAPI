@@ -1,6 +1,7 @@
 import { Box, Container, Flex, HStack } from '@chakra-ui/react';
 import { ColorModeButton, MoralisLogo, NavBar } from 'components/elements';
 import { ConnectButton } from '../ConnectButton';
+import WCModal from '../WalletConnect/Main';
 
 const Header = () => {
   return (
@@ -11,6 +12,7 @@ const Header = () => {
           <NavBar />
           <HStack gap={'10px'}>
             <ConnectButton />
+            <WCModal />
             <ColorModeButton />
           </HStack>
         </Flex>
